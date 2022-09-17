@@ -69,17 +69,6 @@ const Table = ({ searchQuery }) => {
 				</tr>
 			</thead>
 			<tbody>
-				{/* {tableData.map((row) => {
-					return (
-						<TableRow
-							key={row.id}
-							name={row.name}
-							date={row.date}
-							state={row.isActive}
-							id={row.id}
-						/>
-					);
-				})} */}
 				{tableData
 					.filter((row) =>
 						row.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -95,7 +84,6 @@ const Table = ({ searchQuery }) => {
 							/>
 						);
 					})}
-				{/* {tableData.filter((row) => row.name.includes('O'))} */}
 			</tbody>
 		</table>
 	);
