@@ -1,0 +1,71 @@
+@import '../variables.scss';
+
+.main {
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 600px;
+    margin: 80px auto;
+    padding: 32px;
+}
+
+.btn{
+    background-color: $background;
+    border: 1px solid #E5E5E5;
+    color: #333333;
+    cursor: pointer;
+    width: 72px;
+    height: 32px;
+    font-weight: 400;
+    font-size: 14px;
+   
+}
+
+.btn_active {
+    background-color: $background;
+    border: 1px solid #E5E5E5;
+    color: #000000;
+    cursor: pointer;
+    width: 72px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 14px;
+   
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.stats {
+    margin-left: 40px;
+    &__heading {
+        color: #9C9C9C;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    &__cash {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    &_other {
+        display: flex;
+        &_cash {
+            color: #333333;
+            margin-right: 25px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+
+

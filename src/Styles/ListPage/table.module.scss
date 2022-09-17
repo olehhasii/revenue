@@ -1,0 +1,76 @@
+@import '../variables.scss';
+
+
+
+.table {
+    border: 1px solid $borderColor;
+    border-collapse: collapse;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-top: 50px;
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+
+    &__header {
+        background-color: $lightGray;
+        border-bottom: 1px solid $borderColor;
+        color: $grayText;
+        height: 40px;
+        padding: 12px 24px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        &_sortable{
+            cursor: pointer;
+        }
+    }
+
+    &__content {
+        background-color: $background;
+        border-bottom: 1px solid $borderColor;
+        text-align: left;
+        &_name {
+            padding: 16px 24px;
+            width: 25%;
+            font-weight: 500;
+            font-size: 14px;
+            width: 25%;
+        }
+        &_date {
+            color: $grayText;
+            padding: 16px 24px;
+            font-weight: 400;
+            width: 50%;
+        }
+        &_state {
+            color: $activeState;
+            padding: 16px 24px;
+            font-weight: 400;
+            width: 25%;
+        }
+    }
+
+    &__content:hover {
+        background-color: $gray;
+        cursor: pointer;
+    }
+    
+}
+
+.disable {
+    color: $disabledState;
+}
+
+.sortIconAsc {
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+}
+
+.sortIconDesc {
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+    transform: rotate(180deg) scaleX(-1);
+}
